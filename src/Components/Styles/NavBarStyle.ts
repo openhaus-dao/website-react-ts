@@ -23,6 +23,7 @@ export const LogoContainer = styled.div`
   width: content-fit;
   margin-right: 15px;
   justify-content: center;
+  cursor: pointer;
   align-items: center;
   @media screen and (max-width: 576px) {
     font-size: 1.15rem;
@@ -45,11 +46,13 @@ export const RightContainer = styled.div`
   }
 `;
 
-export const NavOption = styled.p`
+export const NavOption = styled.a`
   display: flex;
   margin: 20px;
   font-size: 1.8rem;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
   @media screen and (max-width: 576px) {
     font-size: 1.4rem;
   }
@@ -58,9 +61,9 @@ export const NavOption = styled.p`
   }
 `;
 
-export const JoinUs = styled.button`
+export const JoinUs = styled.a`
   display: flex;
-  background: blue;
+  background: var(--btn-color);
   color: white;
   border-radius: 30px;
   border: 2px solid transparent;

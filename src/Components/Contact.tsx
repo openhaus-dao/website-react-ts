@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import {
   ContactMainContainer,
   ContactInfoContainer,
@@ -11,24 +11,40 @@ import {
   SiteMapLink,
 } from "./Styles/HomeStyle";
 import { FaDiscord, FaTelegramPlane, FaTwitter } from "react-icons/fa";
+import { SocialWrapper } from "./Styles/AboutStyle";
+import { IconType } from "react-icons";
+import { DISCORD, TELEGRAM, TWITTER } from "../Constant";
 
+interface Icon {
+  Icon: IconType;
+  link: string;
+}
 const Contact = () => {
   const ContactInfo = () => {
+    const SocialLink: FC<Icon> = ({ Icon, link }) => {
+      return (
+        <SocialWrapper href={link}>
+          <Icon
+            style={{
+              color: "white",
+              fontSize: "30px",
+              marginRight: "20px",
+              cursor: "pointer",
+            }}
+          />
+        </SocialWrapper>
+      );
+    };
+
     return (
       <ContactInfoContainer>
         <ContactInfoLogo>LOGO</ContactInfoLogo>
         <ContactInfoTitle>Get In Touch</ContactInfoTitle>
-        <ContactInfoEmail>hello@openhaus.community</ContactInfoEmail>
+        <ContactInfoEmail>team@openhaus.community</ContactInfoEmail>
         <ContactSocialContainer>
-          <FaDiscord
-            style={{ color: "white", fontSize: "30px", marginRight: "20px" }}
-          />
-          <FaTelegramPlane
-            style={{ color: "white", fontSize: "30px", marginRight: "20px" }}
-          />
-          <FaTwitter
-            style={{ color: "white", fontSize: "30px", marginRight: "20px" }}
-          />
+          <SocialLink Icon={FaDiscord} link={DISCORD} />
+          <SocialLink Icon={FaTelegramPlane} link={TELEGRAM} />
+          <SocialLink Icon={FaTwitter} link={TWITTER} />
         </ContactSocialContainer>
       </ContactInfoContainer>
     );

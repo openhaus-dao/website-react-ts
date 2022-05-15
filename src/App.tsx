@@ -4,6 +4,8 @@ import styled from "styled-components";
 import NavBar from "./Components/NavBar";
 import { Route, Routes } from "react-router-dom";
 import HomeView from "./Pages/HomeView";
+import AboutUs from "./Pages/AboutUs";
+import Contact from "./Components/Contact";
 
 const AppContainer = styled.div`
   display: flex;
@@ -18,9 +20,10 @@ function App() {
     <AppContainer>
       <NavBar />
       <Routes>
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/" element={<HomeView />} />
-        {/* <Route path="/about-us" element={} /> */}
       </Routes>
+      <Contact />
     </AppContainer>
   );
 }

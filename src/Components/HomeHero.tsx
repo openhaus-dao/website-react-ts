@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import {
   HeroButton,
   ButtonContainer,
@@ -7,6 +7,7 @@ import {
   HeroSubTitle,
   HeroTitle,
 } from "./Styles/HomeStyle";
+import { DISCORD, GOOGLE_PARTNERSHIP_FORM } from "../Constant";
 
 const HomeHero = () => {
   return (
@@ -17,8 +18,10 @@ const HomeHero = () => {
           An inclusive community where all developers can level up
         </HeroSubTitle>
         <ButtonContainer>
-          <HeroButton>Join Us on Discord</HeroButton>
-          <HeroButton>Partnership Inquiries</HeroButton>
+          <HeroButton href={DISCORD}>Join Us on Discord</HeroButton>
+          <HeroButton href={GOOGLE_PARTNERSHIP_FORM}>
+            Partnership Inquiries
+          </HeroButton>
         </ButtonContainer>
       </HeroContainer>
     </HeroSection>

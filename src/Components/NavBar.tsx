@@ -1,4 +1,4 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   LogoContainer,
   MainContainer,
@@ -7,18 +7,20 @@ import {
   NavContainer,
   JoinUs,
 } from "./Styles/NavBarStyle";
+import { DISCORD, EVENT, NOTION } from "../Constant";
 
 const NavBar = () => {
+  const navigate = useNavigate();
   return (
     <MainContainer>
       <NavContainer>
-        <LogoContainer>OpenHaus</LogoContainer>
+        <LogoContainer onClick={() => navigate("/")}>OpenHaus</LogoContainer>
         <RightContainer>
-          <NavOption>Home</NavOption>
-          <NavOption>About Us</NavOption>
-          <NavOption>Events</NavOption>
-          <NavOption>Resources</NavOption>
-          <JoinUs>Join Us</JoinUs>
+          <NavOption onClick={() => navigate("/")}>Home</NavOption>
+          <NavOption onClick={() => navigate("/about-us")}>About Us</NavOption>
+          <NavOption href={EVENT}>Events</NavOption>
+          <NavOption href={NOTION}>Resources</NavOption>
+          <JoinUs href={DISCORD}>Join Us</JoinUs>
         </RightContainer>
       </NavContainer>
     </MainContainer>

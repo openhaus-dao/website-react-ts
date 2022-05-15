@@ -53,15 +53,17 @@ export const ButtonContainer = styled.div`
   }
 `;
 
-export const HeroButton = styled.button`
+export const HeroButton = styled.a`
   display: flex;
+  background: var(--btn-color);
+  color: white;
   border-radius: 30px;
   border: 2px solid transparent;
   text-decoration: none;
   transition: background-color 200ms ease-in-out;
   cursor: pointer;
-  justify-content: flex;
-  align-items: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 600;
   padding: 1.2rem 2rem;
   font-size: 1.8rem;

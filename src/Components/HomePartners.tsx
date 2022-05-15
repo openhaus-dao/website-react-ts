@@ -10,11 +10,12 @@ const HomePartners = () => {
     <PartnersSection>
       <PartnersTitle>Partners</PartnersTitle>
       <PartnersContainer>
-        <div>Draper Startup House</div>
-        <div>Brand 1</div>
-        <div>Brand 2</div>
-        <div>Brand 3</div>
-        <div>Brand 4</div>
+        <div>Hawksight</div>
+        <div>PsyOption</div>
+        <div>Solana FM</div>
+        <div>Web3Auth</div>
+        <div>Pyth</div>
+        <div>SolDance</div>
       </PartnersContainer>
     </PartnersSection>
   );
