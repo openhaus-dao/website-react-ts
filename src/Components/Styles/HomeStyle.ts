@@ -111,15 +111,18 @@ export const BodyFeatureCard = styled.div`
   padding: 32px;
   border-radius: 16px;
   background: #eff3f9;
+  width: 20%;
+  margin: 0 2%;
 `;
 
-export const BodyFeatureCardTitle = styled.div`
+export const BodyFeatureCardTitle = styled.h2`
   font-size: 2.4rem;
   margin: 12px 0;
 `;
 
-export const BodyFeatureCardDescription = styled.div`
+export const BodyFeatureCardDescription = styled.p`
   font-size: 1.8rem;
+  margin: 0;
 `;
 
 // PARTNERS

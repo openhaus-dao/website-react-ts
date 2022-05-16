@@ -38,22 +38,28 @@ const HomeBody = () => {
           <Card
             Icon={GrWorkshop}
             title={"Workshops"}
-            description={"This is a description"}
+            description={"Dive into the codebase and start learning by CODING!"}
           />
           <Card
             Icon={GiTeamIdea}
             title={"Pitching Sessions"}
-            description={"This is a description"}
+            description={
+              "Pitch and recruit a team of engineers to make things happen!"
+            }
           />
           <Card
             Icon={MdConnectWithoutContact}
             title={"Networking"}
-            description={"This is a description"}
+            description={
+              "Meet like-minded people in the industry that will help you achieve your goals"
+            }
           />
           <Card
             Icon={FaHandsHelping}
             title={"Mentorship"}
-            description={"This is a description"}
+            description={
+              "Learn from experience developers whenever you encounter an issue"
+            }
           />
         </BodyFeatureContainer>
       </BodyContainer>

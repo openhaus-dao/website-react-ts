@@ -8,7 +8,7 @@ import {
 const HomePartners = () => {
   return (
     <PartnersSection>
-      <PartnersTitle>Partners</PartnersTitle>
+      <PartnersTitle>Showcase</PartnersTitle>
       <PartnersContainer>
         <div>Hawksight</div>
         <div>PsyOption</div>
