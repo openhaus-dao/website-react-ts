@@ -124,7 +124,7 @@ export const BodyFeatureCard = styled.div`
   padding: 32px;
   border-radius: 16px;
   background: #eff3f9;
-  min-width: 300px;
+  min-width: 220px;
   margin: 0 2%;
 `;
 
