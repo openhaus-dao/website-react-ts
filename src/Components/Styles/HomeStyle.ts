@@ -155,6 +155,13 @@ export const PartnersContainer = styled.h1`
     justify-content: space-evenly;
     color: var(--extra-text-color);
     margin: 20px 0;
+
+    @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        justify-content: center;
+    }
 `;
 
 // CONTACT US
