@@ -20,8 +20,8 @@ function App() {
     <AppContainer>
       <NavBar />
       <Routes>
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/" element={<HomeView />} />
+        <Route path="about-us" element={<AboutUs />} />
+        <Route path="*" element={<HomeView />} />
       </Routes>
       <Contact />
     </AppContainer>
