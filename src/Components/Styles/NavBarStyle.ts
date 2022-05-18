@@ -71,9 +71,12 @@ export const RightNavIcon = styled.div`
 `;
 
 export const RightNavOptionsContainer = styled.div`
-    background-color: white;
     z-index: 1;
     padding: 20px;
+
+    @media screen and (max-width: 768px) {
+        background-color: white;
+    }
 `;
 
 export const NavOption = styled.a`
