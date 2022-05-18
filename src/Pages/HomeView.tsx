@@ -5,13 +5,13 @@ import HomePartners from "../Components/HomePartners";
 import { HomeContainer } from "../Components/Styles/HomeStyle";
 
 const HomeView = () => {
-  return (
-    <HomeContainer>
-      <HomeHero />
-      <HomeBody />
-      <HomePartners />
-    </HomeContainer>
-  );
+    return (
+        <HomeContainer>
+            <HomeHero />
+            <HomeBody />
+            <HomePartners />
+        </HomeContainer>
+    );
 };
 
 export default HomeView;
