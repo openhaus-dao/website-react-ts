@@ -62,7 +62,7 @@ export const ButtonContainer = styled.div`
 export const HeroButton = styled.a`
   display: flex;
   background: var(--btn-color);
-  color: white;
+  color: var(--btn-text);
   border-radius: 30px;
   border: 2px solid transparent;
   text-decoration: none;
@@ -74,6 +74,11 @@ export const HeroButton = styled.a`
   padding: 1.2rem 2rem;
   font-size: 1.8rem;
   margin: 20px 10px;
+  box-shadow: 1px 2px 2px var(--extra-text-color);
+  text-shadow: 1px 2px 3px var(--extra-text-color);
+  &:hover {
+    background: var(--btn-color-hover);
+  }
   @media screen and (max-width: 576px) {
     font-size: 1.4rem;
   }
@@ -193,6 +198,8 @@ export const ContactInfoContainer = styled.div`
 export const ContactInfoLogo = styled.div`
   border-bottom: 0.2px solid rgba(255, 255, 255, 0.2);
   margin: 10px 0;
+  font-size: 1.8rem;
+  color: white;
 `;
 
 export const ContactInfoTitle = styled.h1`

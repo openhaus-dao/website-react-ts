@@ -102,12 +102,16 @@ export const NavOption = styled.a`
   cursor: pointer;
   text-decoration: none;
   color: black;
+  transition: all 200ms;
+  &:hover {
+    color: var(--btn-color-hover);
+  }
 `;
 
 export const JoinUs = styled.a`
   display: flex;
   background: var(--btn-color);
-  color: white;
+  color: var(--btn-text);
   border-radius: 30px;
   border: 2px solid transparent;
   text-decoration: none;
@@ -119,4 +123,9 @@ export const JoinUs = styled.a`
   padding: 1.2rem 2rem;
   font-size: 1.8rem;
   margin-left: 15px;
+  box-shadow: 1px 2px 2px var(--extra-text-color);
+  text-shadow: 1px 2px 3px var(--extra-text-color);
+  &:hover {
+    background: var(--btn-color-hover);
+  }
 `;

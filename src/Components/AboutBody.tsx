@@ -32,7 +32,12 @@ const AboutBody = () => {
         >
           {profile.map((user) => (
             <AboutCard>
-              <img src={user.profile} alt="profile" height={"330px"} />
+              <img
+                src={user.profile}
+                alt="profile"
+                height={"330px"}
+                style={{ borderRadius: "5%" }}
+              />
               <AboutCardHeaderContainer>
                 <AboutCardHeader>{user.name}</AboutCardHeader>
                 <SocialWrapper href={user.linkedin}>

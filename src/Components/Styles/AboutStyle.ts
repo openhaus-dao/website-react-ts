@@ -54,6 +54,7 @@ export const AboutBodyContainer = styled.div`
 
 export const AboutBodyHeader = styled.h1`
   display: flex;
+  color: var(--bg-color);
   justify-content: center;
   font-size: 4.2rem;
   width: 100%;
@@ -76,9 +77,10 @@ export const AboutCard = styled.div`
   width: content-fit;
 `;
 
-export const AboutCardImageContainer = styled.div`
-  height: 60%;
-`;
+// export const AboutCardImageContainer = styled.div`
+//   height: 60%;
+//   border-radius: 50px;
+// `;
 
 export const AboutCardHeaderContainer = styled.div`
   display: flex;

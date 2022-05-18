@@ -4,12 +4,14 @@
     sans-serif;
   /* font-family: Poppins, sans-serif; */
   font-size: 62.5%;
-  --primary-text-color: #344d56;
-  --extra-text-color: rgba(52, 77, 86, 0.5);
+  --primary-text-color: #334155;
+  --extra-text-color: #334155;
   --extra-text-color-overdark: hsla(0, 0%, 100%, 0.5);
-  --job-text-color: #e52e52;
-  --bg-color: #1d1b33;
-  --btn-color: green;
+  --job-text-color: #a170d9;
+  --bg-color: #334155;
+  --btn-color: #a170d9;
+  --btn-text: white;
+  --btn-color-hover: #05cab6;
 }
 
 li {
