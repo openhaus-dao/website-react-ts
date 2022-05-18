@@ -15,30 +15,32 @@ export interface IProfile {
   linkedin: string;
 }
 
+const URL_ROOT = "https://openhaus-test.netlify.app/resources/ProfilePicture/";
+
 export const CORE_TEAM: IProfile[] = [
   {
-    profile: "public/Resources/ProfilePicture/Justin_dp.jpeg",
+    profile: `${URL_ROOT}/Justin_dp.jpeg`,
     name: "Justin Lee",
     role: "Events & Community",
     job: "Blockchain Developer",
     linkedin: "https://www.linkedin.com/in/justinlee-yl/",
   },
   {
-    profile: "public/Resources/ProfilePicture/vincent_dp.jpg",
+    profile: `${URL_ROOT}/vincent_dp.jpg`,
     name: "Vincent Leow",
     role: "Education",
     job: "Software Engineer",
     linkedin: "https://linkedin.com/in/vincentlss",
   },
   {
-    profile: "public/Resources/ProfilePicture/Kevin_dp.jpg",
+    profile: `${URL_ROOT}/Kevin_dp.jpg`,
     name: "Kevin Wong",
     role: "General Management",
     job: "General Manager",
     linkedin: "https://www.linkedin.com/in/kevin-wong-3857ab3/",
   },
   {
-    profile: "public/Resources/ProfilePicture/Jonas_dp.jpg",
+    profile: `${URL_ROOT}/Jonas_dp.jpg`,
     name: "Jonas Chen",
     role: "Strategy & Growth",
     job: "Program Manager",
@@ -48,28 +50,28 @@ export const CORE_TEAM: IProfile[] = [
 
 export const CONTRIBUTORS: IProfile[] = [
   {
-    profile: "public/Resources/ProfilePicture/dylan_dp.jpg",
+    profile: `${URL_ROOT}/dylan_dp.jpg`,
     name: "Dylan Oh",
     role: "Engineering & Content",
     job: "Software Engineer",
     linkedin: "https://www.linkedin.com/in/dylan-oh-dick-loon/",
   },
   {
-    profile: "public/Resources/ProfilePicture/yongKang.jpg",
+    profile: `${URL_ROOT}/yongKang.jpg`,
     name: "Yong Kang Chia",
     role: "Engineering",
     job: "Software Engineer",
     linkedin: "https://www.linkedin.com/in/yong-kang-chia-66b225154/",
   },
   {
-    profile: "public/Resources/ProfilePicture/sean_dp.jpg",
+    profile: `${URL_ROOT}/sean_dp.jpg`,
     name: "Sean Leng",
     role: "Engineering & Community",
     job: "iOS Engineer",
     linkedin: "https://www.linkedin.com/in/jonas-chen/ ",
   },
   {
-    profile: "public/Resources/ProfilePicture/sharvin_dp.jpg",
+    profile: `${URL_ROOT}/sharvin_dp.jpg`,
     name: "Sharvin Baindur",
     role: "Content",
     job: "Director",
