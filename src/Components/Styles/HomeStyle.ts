@@ -102,8 +102,15 @@ export const BodyTitle = styled.h1`
 export const BodyFeatureContainer = styled.div`
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
     margin: 20px 0;
+
+    @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        justify-content: center;
+    }
 `;
 
 export const BodyFeatureCard = styled.div`
@@ -113,7 +120,6 @@ export const BodyFeatureCard = styled.div`
     padding: 32px;
     border-radius: 16px;
     background: #eff3f9;
-    width: 20%;
     margin: 0 2%;
 `;
 
