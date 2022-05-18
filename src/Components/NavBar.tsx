@@ -1,64 +1,76 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import {
-    JoinUs,
-    NavOption,
-    RightNavIcon,
-    NavContainer,
-    LogoContainer,
-    MainContainer,
-    RightContainer,
-    RightNavOptionsContainer,
+  JoinUs,
+  NavOption,
+  RightNavIcon,
+  NavContainer,
+  LogoContainer,
+  MainContainer,
+  RightContainer,
+  RightNavOptionsContainerMobile,
 } from "./Styles/NavBarStyle";
 import { DISCORD, EVENT, NOTION } from "../Constant";
+import { GiHamburgerMenu } from "react-icons/gi";
 import useMobile from "../Hooks/useMobile";
 
-interface NavOptionsParams {
-    show: Boolean;
-}
+const RenderNavOptions = () => {
+  const navigate = useNavigate();
 
-const RenderNavOptions: React.FC<NavOptionsParams> = ({ show }) => {
-    const navigate = useNavigate();
+  return (
+    <RightContainer>
+      <NavOption onClick={() => navigate("/")}>Home</NavOption>
+      <NavOption onClick={() => navigate("/about-us")}>About Us</NavOption>
+      <NavOption href={EVENT}>Events</NavOption>
+      <NavOption href={NOTION}>Resources</NavOption>
+      <JoinUs href={DISCORD}>Join Us</JoinUs>
+    </RightContainer>
+  );
+};
 
-    return (
-        show && (
-            <RightNavOptionsContainer>
-                <RightContainer>
-                    <NavOption onClick={() => navigate("/")}>Home</NavOption>
-                    <NavOption onClick={() => navigate("/about-us")}>About Us</NavOption>
-                    <NavOption href={EVENT}>Events</NavOption>
-                    <NavOption href={NOTION}>Resources</NavOption>
-                    <JoinUs href={DISCORD}>Join Us</JoinUs>
-                </RightContainer>
-            </RightNavOptionsContainer>
-        )
-    );
+const RenderNavOptionsMobile = ({ isMobile }: { isMobile: boolean }) => {
+  const [show, setShow] = useState<Boolean>(false);
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setShow(false);
+  }, [pathname]);
+
+  return (
+    <RightContainer>
+      <RightNavIcon onClick={() => setShow(!show)}>
+        <GiHamburgerMenu style={{ fontSize: 25 }} />
+      </RightNavIcon>
+      {show && (
+        <RightNavOptionsContainerMobile>
+          <NavOption onClick={() => navigate("/")}>Home</NavOption>
+          <NavOption onClick={() => navigate("/about-us")}>About Us</NavOption>
+          <NavOption href={EVENT}>Events</NavOption>
+          <NavOption href={NOTION}>Resources</NavOption>
+          <JoinUs href={DISCORD}>Join Us</JoinUs>
+        </RightNavOptionsContainerMobile>
+      )}
+    </RightContainer>
+  );
 };
 
 const NavBar = () => {
-    const isMobile = useMobile();
-    const navigate = useNavigate();
-    const [show, setShow] = useState<Boolean>(false);
+  const isMobile = useMobile();
+  const navigate = useNavigate();
 
-    useEffect(() => {
-        setShow(!isMobile);
-    }, [isMobile]);
-
-    console.log(isMobile);
-    return (
-        <MainContainer>
-            <NavContainer>
-                <LogoContainer onClick={() => navigate("/")}>OpenHaus</LogoContainer>
-
-                <RightContainer>
-                    <RightNavIcon onClick={() => setShow(isMobile ? !show : true)}>
-                        <img src="/src/Resources/menu.png" width={25} />
-                    </RightNavIcon>
-                    <RenderNavOptions show={show} />
-                </RightContainer>
-            </NavContainer>
-        </MainContainer>
-    );
+  return (
+    <MainContainer>
+      <NavContainer>
+        <LogoContainer onClick={() => navigate("/")}>OpenHaus</LogoContainer>
+        {isMobile ? (
+          <RenderNavOptionsMobile isMobile={isMobile} />
+        ) : (
+          <RenderNavOptions />
+        )}
+      </NavContainer>
+    </MainContainer>
+  );
 };
 
 export default NavBar;
