@@ -19,7 +19,12 @@ const HomeHero = () => {
         </HeroSubTitle>
         <ButtonContainer>
           <HeroButton href={DISCORD}>Join Us on Discord</HeroButton>
-          <HeroButton href={GOOGLE_PARTNERSHIP_FORM}>
+          <HeroButton
+            onClick={(e) => {
+              window.location.href = "mailto:team@openhaus.community";
+              e.preventDefault();
+            }}
+          >
             Partnership Inquiries
           </HeroButton>
         </ButtonContainer>
