@@ -17,28 +17,28 @@ interface ICore {
 
 export const CORE_TEAM: ICore[] = [
   {
-    profile: "src/Resources/ProfilePicture/Justin_dp.jpeg",
+    profile: "public/Resources/ProfilePicture/Justin_dp.jpeg",
     name: "Justin Lee",
     role: "Events & Community",
     job: "Blockchain Developer",
     linkedin: "https://www.linkedin.com/in/justinlee-yl/",
   },
   {
-    profile: "src/Resources/ProfilePicture/vincent_dp.jpg",
+    profile: "public/Resources/ProfilePicture/vincent_dp.jpg",
     name: "Vincent Leow",
     role: "Education",
     job: "Software Engineer",
     linkedin: "https://linkedin.com/in/vincentlss",
   },
   {
-    profile: "src/Resources/ProfilePicture/Kevin_dp.jpg",
+    profile: "public/Resources/ProfilePicture/Kevin_dp.jpg",
     name: "Kevin Wong",
     role: "General Management",
     job: "General Manager",
     linkedin: "https://www.linkedin.com/in/kevin-wong-3857ab3/",
   },
   {
-    profile: "src/Resources/ProfilePicture/Jonas_dp.jpg",
+    profile: "public/Resources/ProfilePicture/Jonas_dp.jpg",
     name: "Jonas Chen",
     role: "Strategy & Growth",
     job: "Program Manager",
