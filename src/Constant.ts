@@ -7,7 +7,7 @@ export const NOTION =
   "https://open-haus.notion.site/open-haus/OpenHaus-Resources-d9f74ca41719485e99dd5156d4a0f5c0";
 export const GOOGLE_PARTNERSHIP_FORM = "LINK TO GOOGLE";
 
-interface ICore {
+export interface IProfile {
   profile: string;
   name: string;
   role: string;
@@ -15,7 +15,7 @@ interface ICore {
   linkedin: string;
 }
 
-export const CORE_TEAM: ICore[] = [
+export const CORE_TEAM: IProfile[] = [
   {
     profile: "public/Resources/ProfilePicture/Justin_dp.jpeg",
     name: "Justin Lee",
@@ -43,5 +43,36 @@ export const CORE_TEAM: ICore[] = [
     role: "Strategy & Growth",
     job: "Program Manager",
     linkedin: "https://www.linkedin.com/in/jonas-chen/ ",
+  },
+];
+
+export const CONTRIBUTORS: IProfile[] = [
+  {
+    profile: "public/Resources/ProfilePicture/dylan_dp.jpg",
+    name: "Dylan Oh",
+    role: "Engineering & Content",
+    job: "Software Engineer",
+    linkedin: "https://www.linkedin.com/in/dylan-oh-dick-loon/",
+  },
+  {
+    profile: "public/Resources/ProfilePicture/yongKang.jpg",
+    name: "Yong Kang Chia",
+    role: "Engineering",
+    job: "Software Engineer",
+    linkedin: "https://www.linkedin.com/in/yong-kang-chia-66b225154/",
+  },
+  {
+    profile: "public/Resources/ProfilePicture/sean_dp.jpg",
+    name: "Sean Leng",
+    role: "Engineering & Community",
+    job: "iOS Engineer",
+    linkedin: "https://www.linkedin.com/in/jonas-chen/ ",
+  },
+  {
+    profile: "public/Resources/ProfilePicture/sharvin_dp.jpg",
+    name: "Sharvin Baindur",
+    role: "Content",
+    job: "Director",
+    linkedin: "https://www.linkedin.com/in/sharvin-baindur-03a661177",
   },
 ];

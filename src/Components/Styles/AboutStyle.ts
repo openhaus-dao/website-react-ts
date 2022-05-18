@@ -48,7 +48,6 @@ export const AboutBodyContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   padding: 1% 0;
   height: 100%;
 `;
@@ -63,7 +62,7 @@ export const AboutBodyHeader = styled.h1`
 export const AboutCardContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: fit-content;
   height: 100%;
   margin: 20px 0;
 `;
