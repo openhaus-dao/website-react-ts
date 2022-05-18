@@ -179,6 +179,10 @@ export const ContactInfoContainer = styled.div`
     justify-content: space-apart;
     align-items: flex-start;
     width: 20%;
+
+    @media screen and (max-width: 768px) {
+        width: 65%;
+    }
 `;
 
 export const ContactInfoLogo = styled.div`
