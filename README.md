@@ -3,7 +3,7 @@
 <div>
   <div align="center">
     <h1 style="font-weight: bold">OpenHaus DAO Website</h1>
-      <img src="./src/Resources/image.png" alt="Logo" style="width: 100%" />
+      <img src="public/Resources/image.png" alt="Logo" style="width: 100%" />
     <br />
     <br />
     <p align="center">
