@@ -26,7 +26,7 @@ const URL_ROOT = "https://openhaus-test.netlify.app/resources/ProfilePicture/";
 export const PRESENTER: IPresenter[] = [
   {
     name: "Pyth",
-    link: `${PRESENTER_ROOT}/pyth_logo.png`,
+    link: `${PRESENTER_ROOT}/pyth_logo.svg`,
   },
   {
     name: "Web3Auth",

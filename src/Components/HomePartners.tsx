@@ -11,7 +11,7 @@ const HomePartners = () => {
       <PartnersTitle>Showcase</PartnersTitle>
       <PartnersContainer>
         {PRESENTER.map((project) => (
-          <img src={project.link} alt={project.name} />
+          <img src={project.link} alt={project.name} height={100} />
         ))}
       </PartnersContainer>
     </PartnersSection>
