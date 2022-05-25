@@ -34,7 +34,7 @@ export const PRESENTER: IPresenter[] = [
   },
   {
     name: "MetaCamp",
-    link: `${PRESENTER_ROOT}/metacamp_logo_vertical.png`,
+    link: `${PRESENTER_ROOT}/metacamp_logo.png`,
   },
   {
     name: "SolanaFM",
