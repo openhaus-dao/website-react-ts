@@ -44,6 +44,10 @@ export const PRESENTER: IPresenter[] = [
     name: "Hawksight",
     link: `${PRESENTER_ROOT}/hawksight_logo.png`,
   },
+  {
+    name: "Somove",
+    link: `${PRESENTER_ROOT}/somove_logo.png`,
+  },
 ];
 
 export const CORE_TEAM: IProfile[] = [
