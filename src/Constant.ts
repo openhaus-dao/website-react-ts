@@ -15,7 +15,36 @@ export interface IProfile {
   linkedin: string;
 }
 
+export interface IPresenter {
+  name: string;
+  link: string;
+}
+
+const PRESENTER_ROOT = "https://openhaus-test.netlify.app/resources/";
 const URL_ROOT = "https://openhaus-test.netlify.app/resources/ProfilePicture/";
+
+export const PRESENTER: IPresenter[] = [
+  {
+    name: "Pyth",
+    link: `${PRESENTER_ROOT}/pyth_logo.png`,
+  },
+  {
+    name: "Web3Auth",
+    link: `${PRESENTER_ROOT}/web3auth-logo-light.png`,
+  },
+  {
+    name: "MetaCamp",
+    link: `${PRESENTER_ROOT}/metacamp_logo_vertical.png`,
+  },
+  {
+    name: "SolanaFM",
+    link: `${PRESENTER_ROOT}/solanafm_logo.png`,
+  },
+  {
+    name: "Hawksight",
+    link: `${PRESENTER_ROOT}/hawksight_logo.png`,
+  },
+];
 
 export const CORE_TEAM: IProfile[] = [
   {

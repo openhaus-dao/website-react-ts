@@ -1,3 +1,4 @@
+import { PRESENTER } from "../Constant";
 import {
   PartnersContainer,
   PartnersSection,
@@ -9,10 +10,9 @@ const HomePartners = () => {
     <PartnersSection>
       <PartnersTitle>Showcase</PartnersTitle>
       <PartnersContainer>
-        <div>Hawksight</div>
-        <div>Solana FM</div>
-        <div>Web3Auth</div>
-        <div>SolDance</div>
+        {PRESENTER.map((project) => (
+          <img src={project.link} alt={project.name} />
+        ))}
       </PartnersContainer>
     </PartnersSection>
   );
