@@ -1,4 +1,4 @@
-export const DISCORD = "https://discord.gg/NXaZ4GAh";
+export const DISCORD = "https://discord.gg/QPvGy7NgZb";
 export const TELEGRAM = "https://t.me/+_5YU1nqQEnQ0YmY1";
 export const TWITTER = "https://twitter.com/OpenHausSG";
 export const EVENT =
