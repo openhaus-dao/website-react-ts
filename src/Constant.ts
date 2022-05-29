@@ -1,3 +1,10 @@
+const PRESENTER_ROOT = "../public/Resources/presenter";
+// const PRESENTER_ROOT = "https://openhaus-test.netlify.app/resources/presenter";
+// const RESOURCES_ROOT = "https://openhaus-test.netlify.app/resources/";
+const URL_ROOT = "https://openhaus-test.netlify.app/resources/ProfilePicture/";
+
+export const OPENHAUS = `../public/Resources/OpenHaus_logo_notext.png`;
+// export const OPENHAUS = `${PRESENTER_ROOT}/OpenHaus_logo_notext.png`;
 export const DISCORD = "https://discord.gg/QPvGy7NgZb";
 export const TELEGRAM = "https://t.me/+_5YU1nqQEnQ0YmY1";
 export const TWITTER = "https://twitter.com/OpenHausSG";
@@ -20,29 +27,26 @@ export interface IPresenter {
   link: string;
 }
 
-const PRESENTER_ROOT = "https://openhaus-test.netlify.app/resources/";
-const URL_ROOT = "https://openhaus-test.netlify.app/resources/ProfilePicture/";
-
 export const PRESENTER: IPresenter[] = [
   {
     name: "Pyth",
-    link: `${PRESENTER_ROOT}/pyth_logo.svg`,
+    link: `${PRESENTER_ROOT}/Pyth_logo.png`,
   },
   {
     name: "Web3Auth",
-    link: `${PRESENTER_ROOT}/web3auth-logo-light.png`,
+    link: `${PRESENTER_ROOT}/Web3auth_logo.png`,
   },
   {
     name: "MetaCamp",
-    link: `${PRESENTER_ROOT}/metacamp_logo.png`,
+    link: `${PRESENTER_ROOT}/Metacamp_logo.png`,
   },
   {
     name: "SolanaFM",
-    link: `${PRESENTER_ROOT}/solanafm_logo.png`,
+    link: `${PRESENTER_ROOT}/Solanafm_logo.png`,
   },
   {
     name: "Hawksight",
-    link: `${PRESENTER_ROOT}/hawksight_logo.png`,
+    link: `${PRESENTER_ROOT}/Hawksight_logo.png`,
   },
   {
     name: "Somove",

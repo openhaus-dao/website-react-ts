@@ -10,7 +10,7 @@ import {
   RightContainer,
   RightNavOptionsContainerMobile,
 } from "./Styles/NavBarStyle";
-import { DISCORD, EVENT, NOTION } from "../Constant";
+import { DISCORD, EVENT, NOTION, OPENHAUS } from "../Constant";
 import { GiHamburgerMenu } from "react-icons/gi";
 import useMobile from "../Hooks/useMobile";
 
@@ -62,7 +62,9 @@ const NavBar = () => {
   return (
     <MainContainer>
       <NavContainer>
-        <LogoContainer onClick={() => navigate("/")}>OpenHaus</LogoContainer>
+        <LogoContainer onClick={() => navigate("/")}>
+          <img src={OPENHAUS} alt="logo" height={50} />
+        </LogoContainer>
         {isMobile ? (
           <RenderNavOptionsMobile isMobile={isMobile} />
         ) : (
