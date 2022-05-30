@@ -159,10 +159,11 @@ export const PartnersTitle = styled.h1`
   font-size: 3.2rem;
 `;
 
-export const PartnersContainer = styled.h1`
-  display: flex;
+export const PartnersContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   width: 100%;
-  justify-content: space-evenly;
+  justify-items: center;
   color: var(--extra-text-color);
   margin: 20px 0;
 

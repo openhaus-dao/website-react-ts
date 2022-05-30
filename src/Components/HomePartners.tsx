@@ -17,7 +17,7 @@ const HomePartners = () => {
           <img
             src={project.link}
             alt={project.name}
-            height={isMobile ? 80 : 100}
+            height={isMobile ? 60 : 100}
           />
         ))}
       </PartnersContainer>
