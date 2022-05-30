@@ -168,9 +168,10 @@ export const PartnersContainer = styled.h1`
 
   @media screen and (max-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 25px;
     justify-content: center;
+    justify-items: center;
   }
 `;
 
