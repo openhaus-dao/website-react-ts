@@ -79,11 +79,11 @@ export const HeroButton = styled.a`
   &:hover {
     background: var(--btn-color-hover);
   }
-  @media screen and (max-width: 576px) {
-    font-size: 1.4rem;
-  }
   @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 1.6rem;
   }
 `;
 
