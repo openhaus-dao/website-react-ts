@@ -7,7 +7,7 @@ const URL_ROOT = "https://openhaus-test.netlify.app/resources/ProfilePicture/";
 export const OPENHAUS = `${RESOURCES_ROOT}/OpenHaus_logo_notext.png`;
 export const DISCORD = "https://discord.gg/QPvGy7NgZb";
 export const TELEGRAM = "https://t.me/+_5YU1nqQEnQ0YmY1";
-export const TWITTER = "https://twitter.com/OpenHausSG";
+export const TWITTER = "https://twitter.com/OpenHausDAO";
 export const EVENT =
   "https://www.meetup.com/singapore-solana-developer-meetup/";
 export const NOTION =

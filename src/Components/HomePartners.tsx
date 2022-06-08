@@ -17,7 +17,7 @@ const HomePartners = () => {
           <img
             src={project.link}
             alt={project.name}
-            height={isMobile ? 60 : 100}
+            style={{ margin: "0 20px", height: isMobile ? "60px" : "100px" }}
           />
         ))}
       </PartnersContainer>
