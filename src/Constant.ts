@@ -111,7 +111,7 @@ export const CONTRIBUTORS: IProfile[] = [
     profile: `${URL_ROOT}/sharvin_dp.jpg`,
     name: "Sharvin Baindur",
     role: "Content",
-    job: "Director",
+    job: "Chief of Staff",
     linkedin: "https://www.linkedin.com/in/sharvin-baindur-03a661177",
   },
 ];
