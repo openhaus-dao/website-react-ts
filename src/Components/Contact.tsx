@@ -9,21 +9,34 @@ import {
   SiteMapContainer,
   SiteMapTitle,
   SiteMapLink,
+  SpotifyPodcast,
+  SpotifyPodcastLink,
 } from "./Styles/HomeStyle";
 import { FaDiscord, FaTelegramPlane, FaTwitter } from "react-icons/fa";
 import { SocialWrapper } from "./Styles/AboutStyle";
 import { IconType } from "react-icons";
-import { DISCORD, TELEGRAM, TWITTER } from "../Constant";
+import {
+  DISCORD,
+  TELEGRAM,
+  TWITTER,
+  SPOTIFY_IMG,
+  SPOTIFY,
+  NOTION,
+  EVENT,
+} from "../Constant";
+import { useNavigate } from "react-router-dom";
 
 interface Icon {
   Icon: IconType;
   link: string;
 }
 const Contact = () => {
+  const navigate = useNavigate();
+
   const ContactInfo = () => {
     const SocialLink: FC<Icon> = ({ Icon, link }) => {
       return (
-        <SocialWrapper href={link}>
+        <SocialWrapper href={link} target="_blank">
           <Icon
             style={{
               color: "white",
@@ -46,6 +59,9 @@ const Contact = () => {
           <SocialLink Icon={FaTelegramPlane} link={TELEGRAM} />
           <SocialLink Icon={FaTwitter} link={TWITTER} />
         </ContactSocialContainer>
+        <SpotifyPodcastLink href={SPOTIFY} target="_blank">
+          <SpotifyPodcast src={SPOTIFY_IMG} alt="Spotify Podcast Icon" />
+        </SpotifyPodcastLink>
       </ContactInfoContainer>
     );
   };
@@ -54,9 +70,15 @@ const Contact = () => {
     return (
       <SiteMapContainer>
         <SiteMapTitle>OpenHaus</SiteMapTitle>
-        <SiteMapLink>About Us</SiteMapLink>
-        <SiteMapLink>Events</SiteMapLink>
-        <SiteMapLink>Resources</SiteMapLink>
+        <SiteMapLink onClick={() => navigate("/about-us")}>
+          About Us
+        </SiteMapLink>
+        <SiteMapLink href={EVENT} target="_blank">
+          Events
+        </SiteMapLink>
+        <SiteMapLink href={NOTION} target="_blank">
+          Resources
+        </SiteMapLink>
       </SiteMapContainer>
     );
   };

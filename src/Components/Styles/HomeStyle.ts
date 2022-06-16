@@ -222,6 +222,10 @@ export const ContactSocialContainer = styled.div`
   margin: 10px 0;
 `;
 
+export const SpotifyPodcast = styled.img`
+  height: 50px;
+`;
+
 export const SiteMapContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -234,9 +238,14 @@ export const SiteMapTitle = styled.h1`
   margin: 10px 0;
 `;
 
-export const SiteMapLink = styled.p`
+export const SiteMapLink = styled.a`
   color: var(--extra-text-color-overdark);
   font-size: 1.6rem;
   margin: 10px 0;
+  cursor: pointer;
+  text-decoration: none;
+`;
+
+export const SpotifyPodcastLink = styled.a`
   cursor: pointer;
 `;

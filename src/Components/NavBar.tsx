@@ -46,9 +46,15 @@ const RenderNavOptionsMobile = ({ isMobile }: { isMobile: boolean }) => {
         <RightNavOptionsContainerMobile>
           <NavOption onClick={() => navigate("/")}>Home</NavOption>
           <NavOption onClick={() => navigate("/about-us")}>About Us</NavOption>
-          <NavOption href={EVENT}>Events</NavOption>
-          <NavOption href={NOTION}>Resources</NavOption>
-          <JoinUs href={DISCORD}>Join Us</JoinUs>
+          <NavOption href={EVENT} target="_blank">
+            Events
+          </NavOption>
+          <NavOption href={NOTION} target="_blank">
+            Resources
+          </NavOption>
+          <JoinUs href={DISCORD} target="_blank">
+            Join Us
+          </JoinUs>
         </RightNavOptionsContainerMobile>
       )}
     </RightContainer>
