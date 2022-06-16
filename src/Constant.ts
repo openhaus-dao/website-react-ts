@@ -2,10 +2,10 @@
 const PRESENTER_ROOT = "https://openhaus-test.netlify.app/resources/presenter";
 const RESOURCES_ROOT = "https://openhaus-test.netlify.app/resources/";
 const URL_ROOT = "https://openhaus-test.netlify.app/resources/ProfilePicture/";
-export const SPOTIFY_IMG = `../public/Resources/spotify_podcast.png`;
+// export const SPOTIFY_IMG = `../public/Resources/spotify_podcast.png`;
 
 export const OPENHAUS = `${RESOURCES_ROOT}/OpenHaus_logo_notext.png`;
-// export const SPOTIFY_SRC = `${RESOURCES_ROOT}/spotify_podcast.png`;
+export const SPOTIFY_IMG = `${RESOURCES_ROOT}/spotify_podcast.png`;
 export const DISCORD = "https://discord.gg/QPvGy7NgZb";
 export const TELEGRAM = "https://t.me/+_5YU1nqQEnQ0YmY1";
 export const TWITTER = "https://twitter.com/OpenHausDAO";
