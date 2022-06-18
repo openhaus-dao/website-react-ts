@@ -7,7 +7,7 @@ import {
   HeroSubTitle,
   HeroTitle,
 } from "./Styles/HomeStyle";
-import { DISCORD, GOOGLE_PARTNERSHIP_FORM } from "../Constant";
+import { LINKTREE, GOOGLE_PARTNERSHIP_FORM } from "../Constant";
 
 const HomeHero = () => {
   return (
@@ -18,7 +18,9 @@ const HomeHero = () => {
           An inclusive community where all developers can level up
         </HeroSubTitle>
         <ButtonContainer>
-          <HeroButton href={DISCORD}>Join Us on Discord</HeroButton>
+          <HeroButton href={LINKTREE} target="_blank">
+            View All Social Link
+          </HeroButton>
           <HeroButton
             onClick={(e) => {
               window.location.href = "mailto:team@openhaus.community";

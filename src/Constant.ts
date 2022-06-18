@@ -6,6 +6,7 @@ const URL_ROOT = "https://openhaus-test.netlify.app/resources/ProfilePicture/";
 
 export const OPENHAUS = `${RESOURCES_ROOT}/OpenHaus_logo_notext.png`;
 export const SPOTIFY_IMG = `${RESOURCES_ROOT}/spotify_podcast.png`;
+export const LINKTREE = "https://linktr.ee/openhaus";
 export const DISCORD = "https://discord.gg/QPvGy7NgZb";
 export const TELEGRAM = "https://t.me/+_5YU1nqQEnQ0YmY1";
 export const TWITTER = "https://twitter.com/OpenHausDAO";

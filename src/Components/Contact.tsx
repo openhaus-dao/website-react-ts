@@ -16,6 +16,7 @@ import { FaDiscord, FaTelegramPlane, FaTwitter } from "react-icons/fa";
 import { SocialWrapper } from "./Styles/AboutStyle";
 import { IconType } from "react-icons";
 import {
+  LINKTREE,
   DISCORD,
   TELEGRAM,
   TWITTER,
@@ -78,6 +79,9 @@ const Contact = () => {
         </SiteMapLink>
         <SiteMapLink href={NOTION} target="_blank">
           Resources
+        </SiteMapLink>
+        <SiteMapLink href={LINKTREE} target="_blank">
+          All Social Links
         </SiteMapLink>
       </SiteMapContainer>
     );

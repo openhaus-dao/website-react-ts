@@ -10,7 +10,7 @@ import {
   RightContainer,
   RightNavOptionsContainerMobile,
 } from "./Styles/NavBarStyle";
-import { DISCORD, EVENT, NOTION, OPENHAUS } from "../Constant";
+import { LINKTREE, EVENT, NOTION, OPENHAUS } from "../Constant";
 import { GiHamburgerMenu } from "react-icons/gi";
 import useMobile from "../Hooks/useMobile";
 
@@ -23,12 +23,12 @@ const RenderNavOptions = () => {
       <NavOption onClick={() => navigate("/about-us")}>About Us</NavOption>
       <NavOption href={EVENT}>Events</NavOption>
       <NavOption href={NOTION}>Resources</NavOption>
-      <JoinUs href={DISCORD}>Join Us</JoinUs>
+      {/* <JoinUs href={LINKTREE}>All Social Link</JoinUs> */}
     </RightContainer>
   );
 };
 
-const RenderNavOptionsMobile = ({ isMobile }: { isMobile: boolean }) => {
+const RenderNavOptionsMobile = () => {
   const [show, setShow] = useState<Boolean>(false);
   const navigate = useNavigate();
   const { pathname } = useLocation();
@@ -52,9 +52,9 @@ const RenderNavOptionsMobile = ({ isMobile }: { isMobile: boolean }) => {
           <NavOption href={NOTION} target="_blank">
             Resources
           </NavOption>
-          <JoinUs href={DISCORD} target="_blank">
-            Join Us
-          </JoinUs>
+          {/* <JoinUs href={LINKTREE} target="_blank">
+            All Social Link
+          </JoinUs> */}
         </RightNavOptionsContainerMobile>
       )}
     </RightContainer>
@@ -71,11 +71,7 @@ const NavBar = () => {
         <LogoContainer onClick={() => navigate("/")}>
           <img src={OPENHAUS} alt="logo" height={50} />
         </LogoContainer>
-        {isMobile ? (
-          <RenderNavOptionsMobile isMobile={isMobile} />
-        ) : (
-          <RenderNavOptions />
-        )}
+        {isMobile ? <RenderNavOptionsMobile /> : <RenderNavOptions />}
       </NavContainer>
     </MainContainer>
   );
