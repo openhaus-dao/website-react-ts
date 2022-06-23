@@ -176,6 +176,23 @@ export const PartnersContainer = styled.div`
   }
 `;
 
+export const GalleryContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  justify-items: center;
+  color: var(--extra-text-color);
+  margin: 20px 0;
+
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    justify-content: center;
+    justify-items: center;
+  }
+`;
+
 // CONTACT US
 export const ContactMainContainer = styled.div`
   background: var(--bg-color);

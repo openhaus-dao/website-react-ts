@@ -1,4 +1,5 @@
-// const PRESENTER_ROOT = "../public/Resources/presenter";
+// const GALLERY_ROOT = "../public/Resources/Gallery";
+const GALLERY_ROOT = "https://openhaus-test.netlify.app/resources/Gallery";
 const PRESENTER_ROOT = "https://openhaus-test.netlify.app/resources/presenter";
 const RESOURCES_ROOT = "https://openhaus-test.netlify.app/resources/";
 const URL_ROOT = "https://openhaus-test.netlify.app/resources/ProfilePicture/";
@@ -28,6 +29,10 @@ export interface IProfile {
 export interface IPresenter {
   name: string;
   link: string;
+}
+
+export interface IGallery {
+  path: string;
 }
 
 export const PRESENTER: IPresenter[] = [
@@ -116,5 +121,23 @@ export const CONTRIBUTORS: IProfile[] = [
     role: "Content",
     job: "Chief of Staff",
     linkedin: "https://www.linkedin.com/in/sharvin-baindur-03a661177",
+  },
+];
+
+export const GALLERY: IGallery[] = [
+  {
+    path: `${GALLERY_ROOT}/img1.jpg`,
+  },
+  {
+    path: `${GALLERY_ROOT}/img2.jpg`,
+  },
+  {
+    path: `${GALLERY_ROOT}/img3.jpg`,
+  },
+  {
+    path: `${GALLERY_ROOT}/img4.jpg`,
+  },
+  {
+    path: `${GALLERY_ROOT}/img5.jpg`,
   },
 ];
